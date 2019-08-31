@@ -32,11 +32,11 @@ function App() {
 
   return (
     <div className="App">
-    <input type="number" ref={secretInput}></input>
-    <button onClick={setSecret}>Set Secret</button>
-    <input type="number" ref={guessInput}></input>
-    <button onClick={guess}>Guess</button>
-    <label>{message}</label>
+    <input id="secret-input" type="number" ref={secretInput}></input>
+    <button id="secret-button" onClick={setSecret}>Set Secret</button>
+    <input id="guess-input" type="number" ref={guessInput}></input>
+    <button id="guess-button" onClick={guess}>Guess</button>
+    <label id="message">{message}</label>
     </div>
   );
 }
