@@ -32,11 +32,13 @@ function App() {
 
   return (
     <div className="App">
-    <input id="secret-input" type="number" ref={secretInput}></input>
-    <button id="secret-button" onClick={setSecret}>Set Secret</button>
-    <input id="guess-input" type="number" ref={guessInput}></input>
-    <button id="guess-button" onClick={guess}>Guess</button>
-    <label id="message">{message}</label>
+      <input id="secret-input" type="number" placeholder="Write the secret to be guessed" ref={secretInput}></input>
+      <button id="secret-button" onClick={setSecret}>Set Secret</button>
+
+      <input id="guess-input" type="number" placeholder="Write the number to guess" ref={guessInput}></input>
+      <button id="guess-button" onClick={guess}>Guess</button>
+
+      <label id="message">{message}</label>
     </div>
   );
 }
